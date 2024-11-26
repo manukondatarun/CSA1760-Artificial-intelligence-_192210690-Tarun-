@@ -1,0 +1,12 @@
+dob('abi','04-01-2004',12).
+dob('hari','03-06-2004').
+dob('shishi','14-05-2003').
+dob('devi','26-10-2003').
+get_dob(Name,DOB):- dob(Name,DOB).
+get_dobage(Name,DOB,AGE):-dob(Name,DOB,AGE).
+
+output:
+x=abi,y=04-01-2004;
+x=hari,y=03-06-2004;
+x=shishi,y=14-05-2003;
+x=devi,y=26-10-2003;
